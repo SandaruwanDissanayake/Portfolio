@@ -27,12 +27,13 @@
             theme: {
                 extend: {
                     colors: {
-                        primary: '#3B82F6', // blue-500
-                        secondary: '#F59E0B', // amber-500
-                        dark: '#111827', // gray-900
-                        darker: '#0F172A', // slate-900
-                        light: '#F3F4F6', // gray-100
+                        primary: '#ffff', // blue-500
+                        secondary: '#ffff', // amber-500
+                        dark: '#000', // gray-900
+                        darker: '#000', // slate-900
+                        light: '#FFFFF', // gray-100
                         accent: '#1E293B' // slate-800
+
                     },
                     fontFamily: {
                         sans: ['Inter', 'sans-serif'],
@@ -47,7 +48,7 @@
         }
 
         :root {
-            --darker: #0F172A;
+            --darker: #000;
             --white: #F3F4F6;
         }
 
@@ -126,7 +127,7 @@
             left: 0;
             width: 0;
             height: 2px;
-            background-color: #3B82F6;
+            background-color: #ffff;
             transition: width 0.3s ease;
         }
 
@@ -180,16 +181,17 @@
                 <div>
                     <h1 class="text-5xl md:text-7xl font-bold mb-6">I'm a <span class="text-primary">Software
                             Engineer</span></h1>
-                    <p class="text-xl mb-8 leading-relaxed text-gray-300">
-                        A passionate developer specializing in web applications, mobile apps, software development, and
-                        game creation.
+                    <p class="text-sm mb-8 leading-relaxed text-gray-300 font-semibold">
+                        Creative Software Engineer skilled in full-stack development and visually appealing application design. Passionate about 
+delivering user-centric solutions through innovative problem-solving, clean code, and effective collaboration. Experienced in 
+creating engaging digital experiences for clients.
                     </p>
                     <div class="flex space-x-4">
                         <a href="#projects"
-                            class="bg-primary text-white px-8 py-3 rounded-full font-semibold hover:bg-opacity-90 transition">My
+                            class="bg-primary text-darker px-8 py-3 rounded-full font-semibold hover:bg-opacity-90 transition">My
                             Projects</a>
                         <a href="#contact"
-                            class="border-2 border-primary text-primary px-8 py-3 rounded-full font-semibold hover:bg-primary hover:text-white transition">Contact
+                            class="border-2 border-primary text-primary px-8 py-3 rounded-full font-semibold hover:bg-primary hover:text-darker transition">Contact
                             Me</a>
                     </div>
                 </div>
@@ -214,19 +216,19 @@
         <!-- Skills Section -->
         <section id="skills" class="py-20 section">
             <div class="max-w-7xl mx-auto px-6">
-                <h2 class="text-4xl font-bold text-center mb-16">My <span class="text-primary">Skills</span></h2>
+                <h2 class="text-4xl font-bold text-center mb-16 text-darker">My <span class="text-darker">Skills</span></h2>
 
                 <div class="grid md:grid-cols-2 gap-12">
                     <!-- Web Development Skills -->
-                    <div class="bg-accent p-8 rounded-xl shadow-lg">
+                    <div class="bg-darker p-8 rounded-xl shadow-lg">
                         <h3 class="text-2xl font-bold mb-6 flex items-center text-secondary">
                             <i class="fas fa-globe mr-3"></i> Web Development
                         </h3>
                         <div class="space-y-6">
                             <div>
                                 <div class="flex justify-between mb-2">
-                                    <span>HTML/CSS/JavaScript</span>
-                                    <span>95%</span>
+                                    <span  >HTML/CSS/JavaScript</span>
+                                    <span >95%</span>
                                 </div>
                                 <div class="skill-bar">
                                     <div class="skill-level" style="width: 95%"></div>
@@ -263,7 +265,7 @@
                     </div>
 
                     <!-- Mobile Development Skills -->
-                    <div class="bg-accent p-8 rounded-xl shadow-lg">
+                    <div class="bg-darker p-8 rounded-xl shadow-lg">
                         <h3 class="text-2xl font-bold mb-6 flex items-center text-secondary">
                             <i class="fas fa-mobile-alt mr-3"></i> Mobile Development
                         </h3>
@@ -290,7 +292,7 @@
                     </div>
 
                     <!-- Game Development Skills -->
-                    <div class="bg-accent p-8 rounded-xl shadow-lg">
+                    <div class="bg-darker p-8 rounded-xl shadow-lg">
                         <h3 class="text-2xl font-bold mb-6 flex items-center text-secondary">
                             <i class="fas fa-gamepad mr-3"></i> Game Development
                         </h3>
@@ -317,7 +319,7 @@
                     </div>
 
                     <!-- Software Development Skills -->
-                    <div class="bg-accent p-8 rounded-xl shadow-lg">
+                    <div class="bg-darker p-8 rounded-xl shadow-lg">
                         <h3 class="text-2xl font-bold mb-6 flex items-center text-secondary">
                             <i class="fas fa-laptop-code mr-3"></i> Software Development
                         </h3>
@@ -340,8 +342,8 @@
         <!-- Projects Section -->
         <section id="projects" class="py-20 section">
             <div class="max-w-7xl mx-auto px-6">
-                <h2 class="text-4xl font-bold text-center mb-6">My <span class="text-primary">Projects</span></h2>
-                <p class="text-center mb-16 max-w-2xl mx-auto text-gray-300">Filter through different types of projects
+                <h2 class="text-4xl font-bold text-center mb-6 text-darker">My <span class="text-darker">Projects</span></h2>
+                <p class="text-center mb-16 max-w-2xl mx-auto text-darker">Filter through different types of projects
                     below. Click on any project image to view more details.</p>
 
                 <div class="flex justify-center mb-12">
@@ -513,23 +515,23 @@
         <!-- About Section -->
         <section id="about" class="py-20 section">
             <div class="max-w-7xl mx-auto px-6">
-                <h2 class="text-4xl font-bold text-center mb-16">About <span class="text-primary">Me</span></h2>
+                <h2 class="text-4xl font-bold text-center text-darker mb-16">About <span class="text-darker">Me</span></h2>
 
                 <div class="grid md:grid-cols-2 gap-12 items-center">
                     <div class="order-2 md:order-1">
-                        <h3 class="text-3xl font-bold mb-6">My Journey</h3>
-                        <p class="mb-4 leading-relaxed text-gray-300">
+                        <h3 class="text-3xl font-bold text-darker mb-6">My Journey</h3>
+                        <p class="mb-4 leading-relaxed text-darker">
                             My passion for software development began during my higher education. What started with simple
                             web development has now expanded to mobile applications, desktop software, and game development.
                         </p>
-                        <p class="mb-4 leading-relaxed text-gray-300">
+                        <p class="mb-4 leading-relaxed text-darker">
                             Today, I work as a full-stack developer, constantly learning new technologies and solving
                             complex problems. In my free time, I contribute to open-source projects, read about space
                             exploration, and work on game development.
                         </p>
                         <div class="mt-8">
                             <a href="#contact"
-                                class="bg-primary text-white px-8 py-3 rounded-full font-semibold hover:bg-opacity-90 transition inline-block">Get
+                                class="bg-dark text-white px-8 py-3 rounded-full font-semibold hover:bg-opacity-90 transition inline-block">Get
                                 In Touch</a>
                         </div>
                     </div>
@@ -552,8 +554,8 @@
         <!-- Contact Section -->
         <section id="contact" class="py-20 section">
             <div class="max-w-7xl mx-auto px-6">
-                <h2 class="text-4xl font-bold text-center mb-6">Contact <span class="text-primary">Me</span></h2>
-                <p class="text-center mb-16 max-w-2xl mx-auto text-gray-300">Want to discuss a project or opportunity? Fill
+                <h2 class="text-4xl font-bold text-center text-darker mb-6">Contact <span class="text-darker">Me</span></h2>
+                <p class="text-center mb-16 max-w-2xl mx-auto text-darker">Want to discuss a project or opportunity? Fill
                     out the form below or email me directly.</p>
 
                 <div class="grid md:grid-cols-2 gap-12">
@@ -576,7 +578,7 @@
                                     class="w-full px-4 py-3 rounded-lg border-2 border-gray-700 bg-darker focus:outline-none focus:border-primary"></textarea>
                             </div>
                             <button type="submit"
-                                class="w-full bg-primary text-white py-3 rounded-full font-semibold hover:bg-opacity-90 transition">Send
+                                class="w-full bg-dark text-white py-3 rounded-full font-semibold hover:bg-opacity-90 transition">Send
                                 Message</button>
                         </form>
                     </div>
@@ -635,17 +637,14 @@
                             <h3 class="text-xl font-bold mb-4 text-darker">Check Out My Work!</h3>
                             <p class="mb-4 text-darker">Want to see more of my projects? Visit my GitHub profile.</p>
                             <a href="#"
-                                class="bg-primary text-white px-8 py-3 rounded-full font-semibold hover:bg-opacity-90 transition inline-block">Visit
+                                class="bg-dark text-white px-8 py-3 rounded-full font-semibold hover:bg-opacity-90 transition inline-block">Visit
                                 GitHub</a>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-    </div>
-
-    <!-- Footer -->
-    <footer class="py-12 bg-darker text-light">
+        <footer class="py-12 bg-darker text-light">
         <div class="max-w-7xl mx-auto px-6 text-center">
             <div class="text-2xl font-bold mb-6 text-primary">My Portfolio</div>
             <div class="flex justify-center space-x-8 mb-8">
@@ -664,6 +663,10 @@
             </div>
         </div>
     </footer>
+    </div>
+
+    <!-- Footer -->
+    
 
     <script>
         // Initialize Three.js scene

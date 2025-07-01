@@ -119,6 +119,8 @@
 
         .nav-link {
             position: relative;
+            transition: color 0.3s ease;
+            color: #ffff;
         }
 
         .nav-link::after {
@@ -129,13 +131,30 @@
             width: 0;
             height: 2px;
             background-color: #ffff;
+            color: #ffff;
             transition: width 0.3s ease;
         }
 
         .nav-link:hover::after {
             width: 100%;
         }
-
+        .scrolled-nav-link {
+            position: relative;
+            transition: color 0.3s ease;
+    color: #000 !important;
+}
+.scrolled-nav-link::after {
+     content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            color: #000;
+            transition: width 0.3s ease;
+    background-color: #000 !important;
+}
+       
         #hero-canvas {
             position: absolute;
             top: 0;
@@ -157,31 +176,34 @@
         .filter-btn {
             transition: all 0.3s ease;
         }
+        .header {
+    transition: all 0.3s ease;
 
-       
+}
+
     </style>
 </head>
 
 <body class="bg-dark text-light">
     <!-- Navigation -->
-    <nav class="fixed w-full z-50 bg-darker bg-opacity-90 backdrop-blur-sm py-4 px-6 shadow-sm">
-        <div class="max-w-7xl mx-auto flex justify-between items-center">
-            <div class="text-2xl font-bold text-primary">Sandaruwan Dissanayake</div>
-            <div class="hidden md:flex space-x-8">
-                <a href="#home" class="nav-link">Home</a>
-                <a href="#skills" class="nav-link">Skills</a>
-                <a href="#projects" class="nav-link">Projects</a>
-                <a href="#about" class="nav-link">About</a>
-                <a href="#contact" class="nav-link">Contact</a>
-            </div>
-            <button class="md:hidden">
-                <i class="fas fa-bars text-xl"></i>
-            </button>
+    <nav id="header" class="fixed w-full z-50 bg-dark bg-opacity-90 backdrop-blur-sm py-4 px-6 shadow-sm">
+    <div class="max-w-7xl mx-auto flex justify-between items-center">
+        <div class="text-2xl font-bold text-white name" >Sandaruwan Dissanayake</div>
+        <div class="hidden md:flex space-x-8">
+            <a href="#home" class="nav-link nav-link-item">Home</a>
+            <a href="#skills" class="nav-link nav-link-item">Skills</a>
+            <a href="#projects" class="nav-link nav-link-item">Projects</a>
+            <a href="#about" class="nav-link nav-link-item">About</a>
+            <a href="#contact" class="nav-link nav-link-item">Contact</a>
         </div>
-    </nav>
+        <button class="md:hidden">
+            <i class="fas fa-bars text-xl"></i>
+        </button>
+    </div>
+</nav>
 
     <!-- Hero Section -->
-    <section id="home" class="min-h-screen relative flex items-center pt-16 overflow-hidden ">
+    <section id="home" class="min-h-screen relative flex items-center pt-16 overflow-hidden hero-canvass ">
         <canvas id="hero-canvas"></canvas>
         <div class="max-w-7xl mx-auto px-6 py-16 z-10">
             <div class="grid md:grid-cols-2 gap-12 items-center">
@@ -859,20 +881,38 @@
             });
 
             // Background transition on scroll
-            const heroSection = document.getElementById('home');
-            const contentAfterHero = document.querySelector('.content-after-hero');
+const heroSection = document.getElementById('home');
+const contentAfterHero = document.querySelector('.content-after-hero');
+const header = document.getElementById('header');
+// Changed to querySelectorAll to get all nav links
+const navLinks = document.querySelectorAll('.nav-link-item'); // Select by class instead of ID
+const nameElement = document.querySelector('.name'); // Select by ID
 
-            window.addEventListener('scroll', function () {
-                const heroBottom = heroSection.offsetHeight;
-                const scrollPosition = window.scrollY;
-
-                if (scrollPosition > heroBottom * 0.7) {
-                    contentAfterHero.classList.add('scrolled');
-                } else {
-                    contentAfterHero.classList.remove('scrolled');
-                }
-            });
+window.addEventListener('scroll', function() {
+    const heroBottom = heroSection.offsetHeight;
+    const scrollPosition = window.scrollY;
+    
+    if (scrollPosition > heroBottom * 0.7) {
+        contentAfterHero.classList.add('scrolled');
+        header.classList.add('bg-white', 'bg-opacity-90');
+        nameElement.className="text-darker text-2xl font-bold"
+        navLinks.forEach(link => {
+            link.className = 'scrolled-nav-link text-dark'; // Changed to class name
+            
         });
+    } else {
+        contentAfterHero.classList.remove('scrolled');
+        header.classList.remove('bg-white', 'bg-opacity-90');
+        nameElement.className="text-white text-2xl font-bold"
+        navLinks.forEach(link => {
+            link.className="nav-link text-white"
+        });
+    }
+});
+        });
+
+        
+       
     </script>
 </body>
 

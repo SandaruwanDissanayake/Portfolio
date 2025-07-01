@@ -109,6 +109,7 @@
         .project-card {
             transition: transform 0.3s ease, box-shadow 0.3s ease;
             background-color: #1E293B;
+            transition: opacity 0.3s ease, transform 0.3s ease;
         }
 
         .project-card:hover {
@@ -152,6 +153,12 @@
             background-position: center;
             background-repeat: no-repeat;
         }
+
+        .filter-btn {
+            transition: all 0.3s ease;
+        }
+
+       
     </style>
 </head>
 
@@ -182,9 +189,11 @@
                     <h1 class="text-5xl md:text-7xl font-bold mb-6">I'm a <span class="text-primary">Software
                             Engineer</span></h1>
                     <p class="text-sm mb-8 leading-relaxed text-gray-300 font-semibold">
-                        Creative Software Engineer skilled in full-stack development and visually appealing application design. Passionate about 
-delivering user-centric solutions through innovative problem-solving, clean code, and effective collaboration. Experienced in 
-creating engaging digital experiences for clients.
+                        Creative Software Engineer skilled in full-stack development and visually appealing application
+                        design. Passionate about
+                        delivering user-centric solutions through innovative problem-solving, clean code, and effective
+                        collaboration. Experienced in
+                        creating engaging digital experiences for clients.
                     </p>
                     <div class="flex space-x-4">
                         <a href="#projects"
@@ -216,7 +225,8 @@ creating engaging digital experiences for clients.
         <!-- Skills Section -->
         <section id="skills" class="py-20 section">
             <div class="max-w-7xl mx-auto px-6">
-                <h2 class="text-4xl font-bold text-center mb-16 text-darker">My <span class="text-darker">Skills</span></h2>
+                <h2 class="text-4xl font-bold text-center mb-16 text-darker">My <span class="text-darker">Skills</span>
+                </h2>
 
                 <div class="grid md:grid-cols-2 gap-12">
                     <!-- Web Development Skills -->
@@ -227,8 +237,8 @@ creating engaging digital experiences for clients.
                         <div class="space-y-6">
                             <div>
                                 <div class="flex justify-between mb-2">
-                                    <span  >HTML/CSS/JavaScript</span>
-                                    <span >95%</span>
+                                    <span>HTML/CSS/JavaScript</span>
+                                    <span>95%</span>
                                 </div>
                                 <div class="skill-bar">
                                     <div class="skill-level" style="width: 95%"></div>
@@ -342,21 +352,28 @@ creating engaging digital experiences for clients.
         <!-- Projects Section -->
         <section id="projects" class="py-20 section">
             <div class="max-w-7xl mx-auto px-6">
-                <h2 class="text-4xl font-bold text-center mb-6 text-darker">My <span class="text-darker">Projects</span></h2>
+                <h2 class="text-4xl font-bold text-center mb-6 text-darker">My <span class="text-darker">Projects</span>
+                </h2>
                 <p class="text-center mb-16 max-w-2xl mx-auto text-darker">Filter through different types of projects
                     below. Click on any project image to view more details.</p>
 
                 <div class="flex justify-center mb-12">
                     <div class="inline-flex flex-wrap justify-center gap-2">
-                        <button class="filter-btn active px-6 py-2 rounded-full bg-primary text-white font-semibold"
+                        <button
+                            class="filter-btn active px-6 py-2 rounded-full bg-white font-semibold border-2 border-dark text-darker"
                             data-filter="all">All</button>
-                        <button class="filter-btn px-6 py-2 rounded-full bg-accent font-semibold" data-filter="web">Web
+                        <button
+                            class="filter-btn px-6 py-2 rounded-full bg-white border-2 border-dark text-darker font-semibold"
+                            data-filter="web">Web
                             Apps</button>
-                        <button class="filter-btn px-6 py-2 rounded-full bg-accent font-semibold"
+                        <button
+                            class="filter-btn px-6 py-2 rounded-full bg-white border-2 border-dark text-darker font-semibold"
                             data-filter="mobile">Mobile Apps</button>
-                        <button class="filter-btn px-6 py-2 rounded-full bg-accent font-semibold"
+                        <button
+                            class="filter-btn px-6 py-2 rounded-full bg-white border-2 border-dark text-darker font-semibold"
                             data-filter="software">Software</button>
-                        <button class="filter-btn px-6 py-2 rounded-full bg-accent font-semibold"
+                        <button
+                            class="filter-btn px-6 py-2 rounded-full bg-white border-2 border-dark text-darker font-semibold"
                             data-filter="game">Games</button>
                     </div>
                 </div>
@@ -380,7 +397,8 @@ creating engaging digital experiences for clients.
                                     <a href="#" class="text-primary font-semibold hover:text-secondary">View Details</a>
                                     <div class="flex space-x-3">
                                         <a href="#"><i class="fab fa-github text-xl hover:text-primary"></i></a>
-                                        <a href="#"><i class="fas fa-external-link-alt text-xl hover:text-primary"></i></a>
+                                        <a href="#"><i
+                                                class="fas fa-external-link-alt text-xl hover:text-primary"></i></a>
                                     </div>
                                 </div>
                             </div>
@@ -399,7 +417,8 @@ creating engaging digital experiences for clients.
                             </div>
                             <div class="p-6">
                                 <h3 class="text-xl font-bold mb-2">Health Monitor App</h3>
-                                <p class="mb-4 text-gray-300">Personal health tracking application built with React Native.
+                                <p class="mb-4 text-gray-300">Personal health tracking application built with React
+                                    Native.
                                 </p>
                                 <div class="flex justify-between">
                                     <a href="#" class="text-primary font-semibold hover:text-secondary">View Details</a>
@@ -448,7 +467,8 @@ creating engaging digital experiences for clients.
                             </div>
                             <div class="p-6">
                                 <h3 class="text-xl font-bold mb-2">Factory Management System</h3>
-                                <p class="mb-4 text-gray-300">Business management software built with Python and Django.</p>
+                                <p class="mb-4 text-gray-300">Business management software built with Python and Django.
+                                </p>
                                 <div class="flex justify-between">
                                     <a href="#" class="text-primary font-semibold hover:text-secondary">View Details</a>
                                     <div class="flex space-x-3">
@@ -478,7 +498,8 @@ creating engaging digital experiences for clients.
                                     <a href="#" class="text-primary font-semibold hover:text-secondary">View Details</a>
                                     <div class="flex space-x-3">
                                         <a href="#"><i class="fab fa-github text-xl hover:text-primary"></i></a>
-                                        <a href="#"><i class="fas fa-external-link-alt text-xl hover:text-primary"></i></a>
+                                        <a href="#"><i
+                                                class="fas fa-external-link-alt text-xl hover:text-primary"></i></a>
                                     </div>
                                 </div>
                             </div>
@@ -515,14 +536,17 @@ creating engaging digital experiences for clients.
         <!-- About Section -->
         <section id="about" class="py-20 section">
             <div class="max-w-7xl mx-auto px-6">
-                <h2 class="text-4xl font-bold text-center text-darker mb-16">About <span class="text-darker">Me</span></h2>
+                <h2 class="text-4xl font-bold text-center text-darker mb-16">About <span class="text-darker">Me</span>
+                </h2>
 
                 <div class="grid md:grid-cols-2 gap-12 items-center">
                     <div class="order-2 md:order-1">
                         <h3 class="text-3xl font-bold text-darker mb-6">My Journey</h3>
                         <p class="mb-4 leading-relaxed text-darker">
-                            My passion for software development began during my higher education. What started with simple
-                            web development has now expanded to mobile applications, desktop software, and game development.
+                            My passion for software development began during my higher education. What started with
+                            simple
+                            web development has now expanded to mobile applications, desktop software, and game
+                            development.
                         </p>
                         <p class="mb-4 leading-relaxed text-darker">
                             Today, I work as a full-stack developer, constantly learning new technologies and solving
@@ -554,8 +578,10 @@ creating engaging digital experiences for clients.
         <!-- Contact Section -->
         <section id="contact" class="py-20 section">
             <div class="max-w-7xl mx-auto px-6">
-                <h2 class="text-4xl font-bold text-center text-darker mb-6">Contact <span class="text-darker">Me</span></h2>
-                <p class="text-center mb-16 max-w-2xl mx-auto text-darker">Want to discuss a project or opportunity? Fill
+                <h2 class="text-4xl font-bold text-center text-darker mb-6">Contact <span class="text-darker">Me</span>
+                </h2>
+                <p class="text-center mb-16 max-w-2xl mx-auto text-darker">Want to discuss a project or opportunity?
+                    Fill
                     out the form below or email me directly.</p>
 
                 <div class="grid md:grid-cols-2 gap-12">
@@ -645,28 +671,28 @@ creating engaging digital experiences for clients.
             </div>
         </section>
         <footer class="py-12 bg-darker text-light">
-        <div class="max-w-7xl mx-auto px-6 text-center">
-            <div class="text-2xl font-bold mb-6 text-primary">My Portfolio</div>
-            <div class="flex justify-center space-x-8 mb-8">
-                <a href="#" class="hover:text-primary"><i class="fab fa-linkedin-in text-xl"></i></a>
-                <a href="#" class="hover:text-primary"><i class="fab fa-github text-xl"></i></a>
-                <a href="#" class="hover:text-primary"><i class="fab fa-twitter text-xl"></i></a>
-                <a href="#" class="hover:text-primary"><i class="fab fa-instagram text-xl"></i></a>
+            <div class="max-w-7xl mx-auto px-6 text-center">
+                <div class="text-2xl font-bold mb-6 text-primary">My Portfolio</div>
+                <div class="flex justify-center space-x-8 mb-8">
+                    <a href="#" class="hover:text-primary"><i class="fab fa-linkedin-in text-xl"></i></a>
+                    <a href="#" class="hover:text-primary"><i class="fab fa-github text-xl"></i></a>
+                    <a href="#" class="hover:text-primary"><i class="fab fa-twitter text-xl"></i></a>
+                    <a href="#" class="hover:text-primary"><i class="fab fa-instagram text-xl"></i></a>
+                </div>
+                <p class="mb-8 text-gray-400">&copy; 2023 My Developer Portfolio. All rights reserved.</p>
+                <div class="flex justify-center space-x-4 text-gray-400">
+                    <a href="#home" class="hover:text-primary">Home</a>
+                    <a href="#skills" class="hover:text-primary">Skills</a>
+                    <a href="#projects" class="hover:text-primary">Projects</a>
+                    <a href="#about" class="hover:text-primary">About</a>
+                    <a href="#contact" class="hover:text-primary">Contact</a>
+                </div>
             </div>
-            <p class="mb-8 text-gray-400">&copy; 2023 My Developer Portfolio. All rights reserved.</p>
-            <div class="flex justify-center space-x-4 text-gray-400">
-                <a href="#home" class="hover:text-primary">Home</a>
-                <a href="#skills" class="hover:text-primary">Skills</a>
-                <a href="#projects" class="hover:text-primary">Projects</a>
-                <a href="#about" class="hover:text-primary">About</a>
-                <a href="#contact" class="hover:text-primary">Contact</a>
-            </div>
-        </div>
-    </footer>
+        </footer>
     </div>
 
     <!-- Footer -->
-    
+
 
     <script>
         // Initialize Three.js scene
@@ -756,22 +782,37 @@ creating engaging digital experiences for clients.
 
             filterBtns.forEach(btn => {
                 btn.addEventListener('click', () => {
-                    // Update active button
+                    // Update active button with transitions
                     filterBtns.forEach(b => {
-                        b.classList.remove('active', 'bg-primary', 'text-white');
-                        b.classList.add('bg-accent');
+                        b.classList.remove('active', 'bg-darker', 'text-white');
+                        b.classList.add('bg-white', 'border-2', 'border-dark', 'text-darker');
+
+                        // Add transition properties
+                        b.style.transition = 'all 0.3s ease';
                     });
-                    btn.classList.add('active', 'bg-primary', 'text-white');
-                    btn.classList.remove('bg-accent');
+
+                    // Animate the active button
+                    btn.style.transition = 'all 0.3s ease';
+                    btn.classList.add('active', 'bg-darker', 'text-white');
+                    btn.classList.remove('bg-white', 'border-dark', 'text-darker');
 
                     const filter = btn.getAttribute('data-filter');
 
-                    // Filter projects
+                    // Filter projects with fade animation
                     projectCards.forEach(card => {
                         if (filter === 'all' || card.getAttribute('data-category') === filter) {
+                            card.style.opacity = '0';
+                            card.style.transition = 'opacity 0.3s ease';
                             card.style.display = 'block';
+                            setTimeout(() => {
+                                card.style.opacity = '1';
+                            }, 10);
                         } else {
-                            card.style.display = 'none';
+                            card.style.opacity = '0';
+                            card.style.transition = 'opacity 0.3s ease';
+                            setTimeout(() => {
+                                card.style.display = 'none';
+                            }, 300);
                         }
                     });
                 });
@@ -821,10 +862,10 @@ creating engaging digital experiences for clients.
             const heroSection = document.getElementById('home');
             const contentAfterHero = document.querySelector('.content-after-hero');
 
-            window.addEventListener('scroll', function() {
+            window.addEventListener('scroll', function () {
                 const heroBottom = heroSection.offsetHeight;
                 const scrollPosition = window.scrollY;
-                
+
                 if (scrollPosition > heroBottom * 0.7) {
                     contentAfterHero.classList.add('scrolled');
                 } else {
